@@ -55,14 +55,22 @@ The topology follows a **hub-and-spoke WAN model** with a central HQ and five br
 
 ---
 
-## Verification
-- End-to-end connectivity tests
-- Inter-branch traffic isolation validation
-- NAT translation verification
-- OSPF adjacency verification
-- Management access control checks
+## Verification & Testing
+
+- Verified OSPF neighbor relationships between HQ and all branch routers
+- Confirmed end-to-end IP connectivity using ICMP (ping)
+- Validated VLAN segmentation and inter-VLAN routing
+- Tested NAT translation at the WAN edge
+- Confirmed SSH-only remote access to network devices
+- Verified ACL enforcement between network segments
 
 ---
+## Packet Tracer Simulation File
+
+📁 **Topology File:**  
+[Download Banking-WAN-HQ-Branches.pkt](Banking-WAN-HQ-Branches.pkt)
+
+> Open using Cisco Packet Tracer (version 8.x or later).
 
 ## Future Enhancements
 - IPSec Site-to-Site VPNs
